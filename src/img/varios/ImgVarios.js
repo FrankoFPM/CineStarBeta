@@ -6,6 +6,7 @@ import starcard from './starcard.jpg';
 import cineFilo from './cinefilo-star.jpg'
 import btnInfo from './btn-mas-info.jpg'
 import btnTrailer from './btn-trailer.jpg'
+import icoInfo from './ico-info2.png'
 
 export default {
     "img1": logo,
@@ -16,4 +17,5 @@ export default {
     "img6": cineFilo,
     "img7": btnInfo,
     "img8": btnTrailer,
+    "img9": icoInfo,
 }

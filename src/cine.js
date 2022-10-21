@@ -2,6 +2,7 @@ import { Fragment, useEffect, useState } from "react";
 import "./estilos.css";
 import ImgVarios from "./img/varios/ImgVarios";
 import ImgPelis from "./img/pelicula/ImgPelis";
+import ImgCines from "./img/cine/ImgCines";
 import ReactPlayer from "react-player";
 
 const Cargarcines = () => {
@@ -25,7 +26,7 @@ const Cargarcines = () => {
             return (
               <Fragment key={index}>
                 <div className="contenido-cine">
-                  <img src="img/cine/cine.id.1.jpg" width="227" height="170" />
+                  <img src={ImgCines[cine.id-1].img1} width="227" height="170" />
                   <div className="datos-cine">
                     <h4>{cine.RazonSocial}</h4>
                     <br />
@@ -37,9 +38,9 @@ const Cargarcines = () => {
                     </span>
                   </div>
                   <br />
-                  <a href="index.html?web=3&idCine=cine.id">
+                  <a href={"index.html?web=3&idCine="+ cine.id}>
                     <img
-                      src="img/varios/ico-info2.png"
+                      src={ImgVarios.img9}
                       width="150"
                       height="40"
                     />
