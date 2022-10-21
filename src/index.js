@@ -6,9 +6,10 @@ import Contenido from "./Contenido";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+
 root.render(<>
     <HeaderContainer />
     <Contenido />
     <div className="clearbox"><br/></div>
     <FooterContainer />
-</>);
+    </>);
