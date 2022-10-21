@@ -29,7 +29,8 @@ import img92 from './9.2.jpg'
 export default [
     {
         "img1": img11,
-        "img2": img12
+        "img2": img12,
+        "img3": img13
     },
     {
         "img1": img21,

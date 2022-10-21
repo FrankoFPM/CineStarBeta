@@ -413,7 +413,7 @@ function Cine() {
 						</p>
 					</div>
 				</div>
-				{/* <img src="img/cine/1.2.jpg" /> */}
+				<img src={ImgCines[0].img2} />
 				<br />
 				<br />
 				<h4>
@@ -427,7 +427,7 @@ function Cine() {
 				</div>
 			</div>
 			<div>
-				{/* <img style="float:left;" src="img/cine/1.3.jpg" /> */}
+				<img style={{float:"left"}} src={ImgCines[0].img3} />
 				<span className="tx_gris">
 					Precios de los juegos: desde S/1.00 en todos los Cine Star.
 					<br />
@@ -460,23 +460,12 @@ function Web() {
 		switch (pagina) {
 			case "1":
 				return Cartelera();
-				//cargarPelis();
-				break;
-
 			case "2":
 				return Cines();
-				//cargarcines();
-				break;
 			case "3":
 				return Cine();
-				//cargarcine();
-				//cargarTarifa();
-				//cargarHorario();
-				break;
 			case "4":
 				return Pelicula();
-				//cargarPeli();
-				break;
 		}
 	}
 }
